@@ -1,0 +1,2 @@
+startup_stm32g474retx.o: \
+ C:/Users/spwkp/OneDrive/Documents/GitHub/RMX_Lab1/QEI_Polling_Read/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s

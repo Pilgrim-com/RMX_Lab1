@@ -1,0 +1,2 @@
+syscalls.o: \
+ C:/Users/spwkp/OneDrive/Documents/GitHub/RMX_Lab1/QEI_Polling_Read/STM32CubeIDE/Application/User/Core/syscalls.c
