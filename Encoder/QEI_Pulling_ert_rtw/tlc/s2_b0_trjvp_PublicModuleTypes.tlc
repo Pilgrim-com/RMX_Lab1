@@ -1,0 +1,24 @@
+%implements s2_b0_trjvp_PublicModuleTypes "C"
+
+%function PublicModuleTypes(block) Output
+
+
+/* Custom Type definition for MATLABSystem: '<Root>/Encoder1' */
+#include "stm_timer_ll.h"
+#include "stm_timer_ll.h"
+
+#ifndef struct_tag_qYaJQJIsmU5kxDdgK7jtpE
+#define struct_tag_qYaJQJIsmU5kxDdgK7jtpE
+struct tag_qYaJQJIsmU5kxDdgK7jtpE
+{
+    boolean_T matlabCodegenIsDeleted;
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    TIM_Type_T* TimerHandle;
+};
+#endif /* struct_tag_qYaJQJIsmU5kxDdgK7jtpE */
+#ifndef typedef_stm32cube_blocks_EncoderBlock_T
+#define typedef_stm32cube_blocks_EncoderBlock_T
+typedef struct tag_qYaJQJIsmU5kxDdgK7jtpE stm32cube_blocks_EncoderBlock_T;
+#endif /* typedef_stm32cube_blocks_EncoderBlock_T */
+%endfunction

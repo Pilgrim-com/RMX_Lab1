@@ -1,0 +1,102 @@
+%implements s2_b0_trjvp_TLCInterface "C"
+
+%function getInputAddr_2_2_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<446b2*//*@>4469d*/QEI_Pulling_B./*@>446ba*/unwrappedPosition"
+%endfunction
+
+%function getInput_2_2_0_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>446cc*/QEI_Pulling_B./*@>446ea*/unwrappedPosition"
+%endfunction
+
+%function getInputAddr_2_3_0_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<44724*//*@>4470f*/QEI_Pulling_B./*@>4472c*/X2"
+%endfunction
+
+%function getInput_2_3_0_1_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>4473e*/QEI_Pulling_B./*@>4475c*/X2"
+%endfunction
+
+%function getInputAddr_2_2_0_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<44796*//*@>44781*/QEI_Pulling_B./*@>4479e*/unwrappedPosition"
+%endfunction
+
+%function getInput_2_2_0_2_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>447b0*/QEI_Pulling_B./*@>447ce*/unwrappedPosition"
+%endfunction
+
+%function getInputAddr_2_3_0_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<44808*//*@>447f3*/QEI_Pulling_B./*@>44810*/X2"
+%endfunction
+
+%function getInput_2_3_0_2_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>44822*/QEI_Pulling_B./*@>44840*/X2"
+%endfunction
+
+%function getInputAddr_2_2_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<4487a*//*@>44865*/QEI_Pulling_B./*@>44882*/unwrappedPosition"
+%endfunction
+
+%function getInput_2_2_0_2_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>44894*/QEI_Pulling_B./*@>448b2*/unwrappedPosition"
+%endfunction
+
+%function getInputAddr_2_3_0_2_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<448ec*//*@>448d7*/QEI_Pulling_B./*@>448f4*/X2"
+%endfunction
+
+%function getInput_2_3_0_2_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>44906*/QEI_Pulling_B./*@>44924*/X2"
+%endfunction
+
+%function getInputAddr_2_2_0_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<4495e*//*@>44949*/QEI_Pulling_B./*@>44966*/unwrappedPosition"
+%endfunction
+
+%function getInput_2_2_0_3_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>44978*/QEI_Pulling_B./*@>44996*/unwrappedPosition"
+%endfunction
+
+%function getInputAddr_2_3_0_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<449d0*//*@>449bb*/QEI_Pulling_B./*@>449d8*/X2"
+%endfunction
+
+%function getInput_2_3_0_3_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>449ea*/QEI_Pulling_B./*@>44a08*/X2"
+%endfunction
+
+%function getInputAddr_2_2_0_3_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<44a42*//*@>44a2d*/QEI_Pulling_B./*@>44a4a*/unwrappedPosition"
+%endfunction
+
+%function getInput_2_2_0_3_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>44a5c*/QEI_Pulling_B./*@>44a7a*/unwrappedPosition"
+%endfunction
+
+%function getInputAddr_2_3_0_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&/*@<44ab4*//*@>44a9f*/QEI_Pulling_B./*@>44abc*/X2"
+%endfunction
+
+%function getInput_2_3_0_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "/*@>44ace*/QEI_Pulling_B./*@>44aec*/X2"
+%endfunction
+

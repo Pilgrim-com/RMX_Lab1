@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI_Pulling'.
  *
- * Model version                  : 1.0
+ * Model version                  : 1.3
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Oct 30 00:27:44 2024
+ * C/C++ source code generated on : Wed Oct 30 01:58:33 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -71,29 +71,15 @@
 #define rtmGetTPtr(rtm)                (&(rtm)->Timing.taskTime0)
 #endif
 
-/* Block signals for system '<Root>/Encoder' */
-typedef struct {
-  uint32_T X4;                         /* '<Root>/Encoder' */
-} B_Encoder_QEI_Pulling_T;
-
-/* Block states (default storage) for system '<Root>/Encoder' */
-typedef struct {
-  stm32cube_blocks_EncoderBlock_T obj; /* '<Root>/Encoder' */
-  boolean_T objisempty;                /* '<Root>/Encoder' */
-} DW_Encoder_QEI_Pulling_T;
-
 /* Block signals (default storage) */
 typedef struct {
-  B_Encoder_QEI_Pulling_T Encoder2;    /* '<Root>/Encoder' */
-  B_Encoder_QEI_Pulling_T Encoder1;    /* '<Root>/Encoder' */
-  B_Encoder_QEI_Pulling_T Encoder;     /* '<Root>/Encoder' */
+  real_T unwrappedPosition;            /* '<Root>/MATLAB Function1' */
+  uint32_T X2;                         /* '<Root>/Encoder1' */
 } B_QEI_Pulling_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  DW_Encoder_QEI_Pulling_T Encoder2;   /* '<Root>/Encoder' */
-  DW_Encoder_QEI_Pulling_T Encoder1;   /* '<Root>/Encoder' */
-  DW_Encoder_QEI_Pulling_T Encoder;    /* '<Root>/Encoder' */
+  stm32cube_blocks_EncoderBlock_T obj; /* '<Root>/Encoder1' */
 } DW_QEI_Pulling_T;
 
 /* Real-time Model Data Structure */
@@ -165,6 +151,7 @@ extern volatile boolean_T runModel;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'QEI_Pulling'
+ * '<S1>'   : 'QEI_Pulling/MATLAB Function1'
  */
 #endif                                 /* QEI_Pulling_h_ */
 

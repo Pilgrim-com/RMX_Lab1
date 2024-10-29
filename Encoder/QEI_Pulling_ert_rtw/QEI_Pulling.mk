@@ -2,7 +2,7 @@
 ## Makefile generated for component 'QEI_Pulling'. 
 ## 
 ## Makefile     : QEI_Pulling.mk
-## Generated on : Wed Oct 30 00:26:31 2024
+## Generated on : Wed Oct 30 01:59:01 2024
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/QEI_Pulling.elf
 ## Product type : executable
 ## 
@@ -23,7 +23,7 @@ MAKEFILE                  = QEI_Pulling.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2024b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2024b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/spwkp/OneDrive/Documents/GitHub/RMX_Lab1
+START_DIR                 = C:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -275,7 +275,7 @@ CFLAGS += $(CFLAGS_SKIPFORSIL) $(CFLAGS_BASIC)
 #-----------
 
 LDFLAGS_ = --specs=nano.specs
-LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Documents\GitHub\RMX_Lab1\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 LDFLAGS += $(LDFLAGS_) $(LDFLAGS_SKIPFORSIL)
 
@@ -284,7 +284,7 @@ LDFLAGS += $(LDFLAGS_) $(LDFLAGS_SKIPFORSIL)
 #--------------------------
 
 SHAREDLIB_LDFLAGS_ = --specs=nano.specs
-SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Documents\GitHub\RMX_Lab1\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_) $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -302,7 +302,7 @@ CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
 #---------------
 
 CPP_LDFLAGS_ = --specs=nano.specs
-CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Documents\GitHub\RMX_Lab1\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 CPP_LDFLAGS += $(CPP_LDFLAGS_) $(CPP_LDFLAGS_SKIPFORSIL)
 
@@ -311,7 +311,7 @@ CPP_LDFLAGS += $(CPP_LDFLAGS_) $(CPP_LDFLAGS_SKIPFORSIL)
 #------------------------------
 
 CPP_SHAREDLIB_LDFLAGS_ = --specs=nano.specs
-CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Documents\GitHub\RMX_Lab1\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_) $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 

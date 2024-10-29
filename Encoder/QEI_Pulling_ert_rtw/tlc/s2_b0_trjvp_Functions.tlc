@@ -1,0 +1,42 @@
+%implements s2_b0_trjvp_Functions "C"
+
+%function QEI_Pulling_SystemCore_setup_Fcn0(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+uint8_T ChannelInfo;
+TIM_Type_T b;
+boolean_T isSlaveModeTriggerEnabled;
+/* {S!d30}Start for MATLABSystem: '<Root>/Encoder1' */
+/*@>42d13*/obj->/*@>44b57*/isInitialized/*@>1e68c*/ = /*@>44af7*/1;
+/*@>42d2c*/b./*@>44b63*/PeripheralPtr/*@>3d947*/ = /*@>42d4b*/TIM3;
+/*@>42d29*/b./*@>44b60*/isCenterAlignedMode/*@>3d943*/ = /*@>42d30*/false;
+/* {S!d32}Start for MATLABSystem: '<Root>/Encoder1' */
+/*@>42d26*/b./*@>44b5d*/repetitionCounter/*@>3d93f*/ = /*@>44afa*/0U;
+/*@>42d3d*/obj->/*@>44b66*/TimerHandle/*@>3d956*/ = /*@>43e9e*/Timer_Handle_Init(&/*@>42d3f*/b);
+/*@>43ea0*/enableTimerInterrupts(/*@>42d41*/obj->TimerHandle, /*@>433e5*/0);
+/*@>42d1a*/ChannelInfo/*@>3d8f5*/ = /*@>42d22*/ENABLE_CH;
+/* {S!d34}Start for MATLABSystem: '<Root>/Encoder1' */
+/*@>43ea2*/enableTimerChannel1(/*@>42d43*/obj->TimerHandle, /*@>42d1d*/ChannelInfo);
+/*@>43ea4*/enableTimerChannel2(/*@>42d45*/obj->TimerHandle, /*@>42d20*/ChannelInfo);
+/*@>42d34*/isSlaveModeTriggerEnabled/*@>3d986*/ = /*@>43ea6*/isSlaveTriggerModeEnabled(/*@>42d47*/obj->TimerHandle);
+/*@>3d99b*/if (!/*@<3d991*//*@>42d37*/isSlaveModeTriggerEnabled) {
+    /* {S!d36}Start for MATLABSystem: '<Root>/Encoder1' */
+    /*@>43ea8*/enableCounter(/*@>42d49*/obj->TimerHandle, /*@>42d3b*/false);
+}
+/*@>42d16*/obj->/*@>44b5a*/isSetupComplete/*@>1e70c*/ = /*@>42d19*/true;
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void QEI_Pulling_SystemCore_setup(\
+%assign comma = ""
+%<comma>stm32cube_blocks_EncoderBlock_T *obj\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 0, fcnProtoType)>
+%return fcnBuff
+%endfunction
+

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI_Pulling'.
  *
- * Model version                  : 1.0
+ * Model version                  : 1.3
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Oct 30 00:27:44 2024
+ * C/C++ source code generated on : Wed Oct 30 01:58:33 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M

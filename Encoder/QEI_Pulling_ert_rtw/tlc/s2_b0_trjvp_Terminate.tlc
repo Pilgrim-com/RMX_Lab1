@@ -1,0 +1,55 @@
+%implements s2_b0_trjvp_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+uint8_T ChannelInfo;
+%closefile localVarDecl
+%assign tlcTerminateFcnOfS2B2 = OpaqueTLCBlockFcn("Terminate", 2, 2, 0, 2, 0)
+%assign tlcTerminateFcnOfS2B3 = OpaqueTLCBlockFcn("Terminate", 2, 3, 0, 2, 1)
+%assign tlcCleanupRuntimeResourcesFcnOfS2B2 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 2, 2, 0, 2, 2)
+%assign tlcCleanupRuntimeResourcesFcnOfS2B3 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 2, 3, 0, 2, 3)
+/* {S!d10}Terminate for MATLABSystem: '<Root>/Encoder1' */
+/*@>41149*/if (!/*@<41147*//*@>4424f*/QEI_Pulling_DW./*@>44c6e*/obj.matlabCodegenIsDeleted) {
+    /*@>44255*/QEI_Pulling_DW./*@>44c71*/obj./*@>44c6b*/matlabCodegenIsDeleted/*@>41146*/ = /*@>42c87*/true;
+    /*@>4114f*/if ((/*@>4425b*/QEI_Pulling_DW./*@>44c74*/obj.isInitialized/*@>4114e*/ == /*@>42caa*/1)/*@>4117e*/ && /*@>44261*/QEI_Pulling_DW./*@>44c77*/obj.isSetupComplete) {
+        /*@>43e7e*/disableCounter(/*@>44267*/QEI_Pulling_DW./*@>44c7a*/obj.TimerHandle);
+        /*@>43e80*/disableTimerInterrupts(/*@>4426d*/QEI_Pulling_DW./*@>44c7d*/obj.TimerHandle, /*@>43398*/0);
+        /*@>42c8a*/ChannelInfo/*@>41155*/ = /*@>42c92*/ENABLE_CH;
+        /*@>43e82*/disableTimerChannel1(/*@>44273*/QEI_Pulling_DW./*@>44c80*/obj.TimerHandle, /*@>42c8d*/ChannelInfo);
+        /*@>43e84*/disableTimerChannel2(/*@>44279*/QEI_Pulling_DW./*@>44c83*/obj.TimerHandle, /*@>42c90*/ChannelInfo);
+    }
+}
+/* {E!d10}End of Terminate for MATLABSystem: '<Root>/Encoder1' */
+%if !WHITE_SPACE(tlcTerminateFcnOfS2B2)
+
+/* {S!d12}Terminate for ToAsyncQueueBlock generated from: '<Root>/MATLAB Function1' */
+%<SLibCG_DumpSSCode("/*@[4451f*/",tlcTerminateFcnOfS2B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcTerminateFcnOfS2B3)
+/* {S!d14}Terminate for ToAsyncQueueBlock generated from: '<Root>/Encoder1' */
+%<SLibCG_DumpSSCode("/*@[44521*/",tlcTerminateFcnOfS2B3,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS2B2)
+/* {S!d16}CleanupRuntimeResources for ToAsyncQueueBlock generated from: '<Root>/MATLAB Function1' */
+%<SLibCG_DumpSSCode("/*@[44523*/",tlcCleanupRuntimeResourcesFcnOfS2B2,"/*@]*/")>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS2B3)
+/* {S!d18}CleanupRuntimeResources for ToAsyncQueueBlock generated from: '<Root>/Encoder1' */
+%<SLibCG_DumpSSCode("/*@[44525*/",tlcCleanupRuntimeResourcesFcnOfS2B3,"/*@]*/")>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedTerminateLocalVars", localVarDecl)>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction
