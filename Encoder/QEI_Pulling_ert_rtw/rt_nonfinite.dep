@@ -1,0 +1,6 @@
+rt_nonfinite.o: \
+ C:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw/rt_nonfinite.c \
+ C:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw/rtwtypes.h \
+ C:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw/rt_nonfinite.h
+C:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw/rtwtypes.h:
+C:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw/rt_nonfinite.h:

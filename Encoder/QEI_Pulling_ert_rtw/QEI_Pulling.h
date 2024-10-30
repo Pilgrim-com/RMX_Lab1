@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI_Pulling'.
  *
- * Model version                  : 1.3
+ * Model version                  : 1.4
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Oct 30 01:58:33 2024
+ * C/C++ source code generated on : Thu Oct 31 02:57:27 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -25,6 +25,7 @@
 #include "rtw_extmode.h"
 #include "sysran_types.h"
 #include "math.h"
+#include "main.h"
 #endif                                 /* QEI_Pulling_COMMON_INCLUDES_ */
 
 #include "QEI_Pulling_types.h"
@@ -73,13 +74,17 @@
 
 /* Block signals (default storage) */
 typedef struct {
-  real_T unwrappedPosition;            /* '<Root>/MATLAB Function1' */
-  uint32_T X2;                         /* '<Root>/Encoder1' */
+  real_T position;                     /* '<Root>/MATLAB Function' */
+  boolean_T DigitalPortRead;           /* '<S7>/Digital Port Read' */
+  boolean_T DigitalPortRead_e;         /* '<S5>/Digital Port Read' */
 } B_QEI_Pulling_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  stm32cube_blocks_EncoderBlock_T obj; /* '<Root>/Encoder1' */
+  real_T lastA;                        /* '<Root>/MATLAB Function' */
+  real_T count;                        /* '<Root>/MATLAB Function' */
+  boolean_T lastA_not_empty;           /* '<Root>/MATLAB Function' */
+  boolean_T count_not_empty;           /* '<Root>/MATLAB Function' */
 } DW_QEI_Pulling_T;
 
 /* Real-time Model Data Structure */
@@ -151,7 +156,13 @@ extern volatile boolean_T runModel;
  * Here is the system hierarchy for this model
  *
  * '<Root>' : 'QEI_Pulling'
- * '<S1>'   : 'QEI_Pulling/MATLAB Function1'
+ * '<S1>'   : 'QEI_Pulling/Digital Port Read3'
+ * '<S2>'   : 'QEI_Pulling/Digital Port Read4'
+ * '<S3>'   : 'QEI_Pulling/MATLAB Function'
+ * '<S4>'   : 'QEI_Pulling/Digital Port Read3/ECSoC'
+ * '<S5>'   : 'QEI_Pulling/Digital Port Read3/ECSoC/ECSimCodegen'
+ * '<S6>'   : 'QEI_Pulling/Digital Port Read4/ECSoC'
+ * '<S7>'   : 'QEI_Pulling/Digital Port Read4/ECSoC/ECSimCodegen'
  */
 #endif                                 /* QEI_Pulling_h_ */
 

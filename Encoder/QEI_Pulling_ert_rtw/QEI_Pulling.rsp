@@ -1,4 +1,3 @@
-stm_timer_ll.o
 xcp_ext_mode.o
 QEI_Pulling.o
 ert_main.o

@@ -1,0 +1,10 @@
+config load "C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\Read_QEI_Polling\Read_QEI_Polling.ioc"
+project toolchain STM32CubeIDE
+
+SetStructure Advanced
+
+project setCustomFWPath "C:\Users\spwkp\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.0"
+
+project generate 
+
+exit wait

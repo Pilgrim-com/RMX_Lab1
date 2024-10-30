@@ -1,5 +1,4 @@
 -IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder
--IC:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include
 -IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw
 -I"C:/Program Files/MATLAB/R2024b/extern/include"
 -I"C:/Program Files/MATLAB/R2024b/simulink/include"
@@ -20,13 +19,14 @@
 -I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/scheduler/include"
 -I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/armcortexmbase/xcp/include"
 -I"C:/Program Files/MATLAB/R2024b/rtw/c/src/ext_mode/serial"
+-IC:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/include
 -I"C:/Program Files/MATLAB/R2024b/toolbox/target/shared/svd/common/include"
 -IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis.instrset/CMSIS/Core/Include
 -IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include
 -IC:/ProgramData/MATLAB/SupportPackages/R2024b/3P.instrset/cmsis_dsp.instrset/Include/dsp
--IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Inc
--IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy
--IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Polling_Read/Drivers/CMSIS/Device/ST/STM32G4xx/Include
--IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Polling_Read/Drivers/CMSIS/Include
--IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Polling_Read/Core/Inc
+-IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Inc
+-IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy
+-IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/Read_QEI_Polling/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+-IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/Read_QEI_Polling/Drivers/CMSIS/Include
+-IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/Read_QEI_Polling/Core/Inc
 -I../Core/Inc

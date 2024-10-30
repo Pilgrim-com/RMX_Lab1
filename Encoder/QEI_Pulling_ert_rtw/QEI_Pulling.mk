@@ -2,7 +2,7 @@
 ## Makefile generated for component 'QEI_Pulling'. 
 ## 
 ## Makefile     : QEI_Pulling.mk
-## Generated on : Wed Oct 30 01:59:01 2024
+## Generated on : Thu Oct 31 02:19:15 2024
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/QEI_Pulling.elf
 ## Product type : executable
 ## 
@@ -210,10 +210,10 @@ INCLUDES = $(INCLUDES_BUILDINFO)
 ## DEFINES
 ###########################################################################
 
-DEFINES_ = -DMW_TIM3_ENABLED=1 -DMW_TIM3_ENCODER_VAR=mw_tim3 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DUSE_FULL_LL_DRIVER -DSTM32G474xx -DUSE_HAL_DRIVER -DMW_TIMEBASESOURCE=TIM2 -DMW_CONNECTIVITY_UART=LPUART1_BASE -DMW_CONNECTIVITY_RX_DMA=DMA1 -DMW_LPUART1_RX_DMA_STREAM=1 -DMW_LPUART1_RX_DMA_ENABLED=DMA1_Channel1_IRQHandler -DMW_CONNECTIVITY_RX_DMAStream=LL_DMA_CHANNEL_1 -DMW_CONNECTIVITY_RX_BUFFER=GET_LPUART1_RECEIVE_BUFFER -DMW_LPUART1_RECEIVE_BUFFER_SIZE=1024 -DMW_LPUART1_ENABLED=1
+DEFINES_ = -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DUSE_FULL_LL_DRIVER -DSTM32G474xx -DUSE_HAL_DRIVER -DMW_TIMEBASESOURCE=TIM2 -DMW_CONNECTIVITY_UART=LPUART1_BASE -DMW_CONNECTIVITY_RX_DMA=DMA1 -DMW_LPUART1_RX_DMA_STREAM=1 -DMW_LPUART1_RX_DMA_ENABLED=DMA1_Channel1_IRQHandler -DMW_CONNECTIVITY_RX_DMAStream=LL_DMA_CHANNEL_1 -DMW_CONNECTIVITY_RX_BUFFER=GET_LPUART1_RECEIVE_BUFFER -DMW_LPUART1_RECEIVE_BUFFER_SIZE=1024 -DMW_LPUART1_ENABLED=1
 DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTERMFCN=1 -DONESTEPFCN=1 -DMAT_FILE=0 -DMULTI_INSTANCE_CODE=0 -DEXT_MODE=1 -DINTEGER_CODE=0 -DMT=0
 DEFINES_CUSTOM = 
-DEFINES_OPTS = -DXCP_DAQ_SUPPORT -DXCP_CALIBRATION_SUPPORT -DXCP_TIMESTAMP_SUPPORT -DXCP_SET_MTA_SUPPORT -DEXTMODE_XCP_TRIGGER_SUPPORT -DINTERNAL_XCP_MEM_BLOCK_1_SIZE=128 -DINTERNAL_XCP_MEM_BLOCK_1_NUMBER=1 -DINTERNAL_XCP_MEM_BLOCK_2_SIZE=168 -DINTERNAL_XCP_MEM_BLOCK_2_NUMBER=4 -DINTERNAL_XCP_MEM_BLOCK_3_SIZE=24 -DINTERNAL_XCP_MEM_BLOCK_3_NUMBER=4 -DINTERNAL_XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=1270 -DINTERNAL_XCP_MEM_RESERVED_POOLS_NUMBER=5 -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3 -DXCP_MEM_DAQ_RESERVED_POOLS_NUMBER=1 -DXCP_MIN_EVENT_NO_RESERVED_POOL=1 -DXCP_MAX_CTO_SIZE=255 -DXCP_MAX_DTO_SIZE=65532 -DXCP_MAX_ODT_ENTRY_SIZE=255 -DEXTMODE_STATIC -DEXTMODE_STATIC_SIZE=2048 -DON_TARGET_WAIT_FOR_START=1 -DTID01EQ=0
+DEFINES_OPTS = -DXCP_DAQ_SUPPORT -DXCP_CALIBRATION_SUPPORT -DXCP_TIMESTAMP_SUPPORT -DXCP_SET_MTA_SUPPORT -DEXTMODE_XCP_TRIGGER_SUPPORT -DINTERNAL_XCP_MEM_BLOCK_1_SIZE=128 -DINTERNAL_XCP_MEM_BLOCK_1_NUMBER=1 -DINTERNAL_XCP_MEM_BLOCK_2_SIZE=168 -DINTERNAL_XCP_MEM_BLOCK_2_NUMBER=4 -DINTERNAL_XCP_MEM_BLOCK_3_SIZE=24 -DINTERNAL_XCP_MEM_BLOCK_3_NUMBER=4 -DINTERNAL_XCP_MEM_RESERVED_POOLS_TOTAL_SIZE=1210 -DINTERNAL_XCP_MEM_RESERVED_POOLS_NUMBER=5 -DXCP_MEM_DAQ_RESERVED_POOL_BLOCKS_NUMBER=3 -DXCP_MEM_DAQ_RESERVED_POOLS_NUMBER=1 -DXCP_MIN_EVENT_NO_RESERVED_POOL=1 -DXCP_MAX_CTO_SIZE=255 -DXCP_MAX_DTO_SIZE=65532 -DXCP_MAX_ODT_ENTRY_SIZE=255 -DEXTMODE_STATIC -DEXTMODE_STATIC_SIZE=2048 -DON_TARGET_WAIT_FOR_START=1 -DTID01EQ=0
 DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -D__FPU_PRESENT=1U -D__FPU_USED=1U -DEXTMODE_DISABLE_ARGS_PROCESSING -DSTACK_SIZE=512 -DRT
 DEFINES_STANDARD = -DMODEL=QEI_Pulling -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
 
@@ -223,7 +223,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_timer_ll.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c $(START_DIR)/QEI_Pulling_ert_rtw/QEI_Pulling.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_common.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_classic_trigger.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_fifo.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_transport.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem_default.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_drv_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/xcp_utils.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_frame_serial.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_param_default_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/overrideHALDelay.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/platform_timer.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/SysTickScheduler.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/rtiostream_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_usart.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_lpuart.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/src/sys_arch.c $(START_DIR)/QEI_Polling_Read/Core/Src/main.c $(START_DIR)/QEI_Polling_Read/Core/Src/stm32g4xx_it.c $(START_DIR)/QEI_Polling_Read/Core/Src/stm32g4xx_hal_msp.c $(START_DIR)/QEI_Polling_Read/Core/Src/stm32g4xx_hal_timebase_tim.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c $(START_DIR)/QEI_Polling_Read/Core/Src/system_stm32g4xx.c $(START_DIR)/QEI_Polling_Read/STM32CubeIDE/Application/User/Core/syscalls.c $(START_DIR)/QEI_Polling_Read/STM32CubeIDE/Application/User/Core/sysmem.c $(START_DIR)/QEI_Polling_Read/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s
+SRCS = $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c $(START_DIR)/QEI_Pulling_ert_rtw/QEI_Pulling.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_common.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_classic_trigger.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_fifo.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_transport.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem_default.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_drv_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/xcp_utils.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_frame_serial.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_param_default_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/overrideHALDelay.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/platform_timer.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/SysTickScheduler.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/rtiostream_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_usart.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_lpuart.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/src/sys_arch.c $(START_DIR)/Read_QEI_Polling/Core/Src/main.c $(START_DIR)/Read_QEI_Polling/Core/Src/stm32g4xx_it.c $(START_DIR)/Read_QEI_Polling/Core/Src/stm32g4xx_hal_msp.c $(START_DIR)/Read_QEI_Polling/Core/Src/stm32g4xx_hal_timebase_tim.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c $(START_DIR)/Read_QEI_Polling/Core/Src/system_stm32g4xx.c $(START_DIR)/Read_QEI_Polling/STM32CubeIDE/Application/User/Core/syscalls.c $(START_DIR)/Read_QEI_Polling/STM32CubeIDE/Application/User/Core/sysmem.c $(START_DIR)/Read_QEI_Polling/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s
 
 MAIN_SRC = $(START_DIR)/QEI_Pulling_ert_rtw/ert_main.c
 
@@ -233,7 +233,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = stm_timer_ll.o xcp_ext_mode.o QEI_Pulling.o xcp_ext_common.o xcp_ext_classic_trigger.o xcp.o xcp_standard.o xcp_daq.o xcp_calibration.o xcp_fifo.o xcp_transport.o xcp_mem_default.o xcp_drv_rtiostream.o xcp_utils.o xcp_frame_serial.o xcp_ext_param_default_serial.o overrideHALDelay.o platform_timer.o SysTickScheduler.o m3m4m4f_multitasking.o rtiostream_serial.o stm_usart.o stm_lpuart.o sys_arch.o main.o stm32g4xx_it.o stm32g4xx_hal_msp.o stm32g4xx_hal_timebase_tim.o stm32g4xx_ll_utils.o stm32g4xx_ll_exti.o stm32g4xx_ll_gpio.o stm32g4xx_ll_dma.o stm32g4xx_ll_lpuart.o stm32g4xx_ll_rcc.o stm32g4xx_ll_pwr.o stm32g4xx_hal.o stm32g4xx_hal_rcc.o stm32g4xx_hal_rcc_ex.o stm32g4xx_hal_flash.o stm32g4xx_hal_flash_ex.o stm32g4xx_hal_flash_ramfunc.o stm32g4xx_hal_gpio.o stm32g4xx_hal_exti.o stm32g4xx_hal_dma.o stm32g4xx_hal_dma_ex.o stm32g4xx_hal_pwr.o stm32g4xx_hal_pwr_ex.o stm32g4xx_hal_cortex.o stm32g4xx_hal_tim.o stm32g4xx_hal_tim_ex.o stm32g4xx_ll_tim.o system_stm32g4xx.o syscalls.o sysmem.o startup_stm32g474retx.o
+OBJS = xcp_ext_mode.o QEI_Pulling.o xcp_ext_common.o xcp_ext_classic_trigger.o xcp.o xcp_standard.o xcp_daq.o xcp_calibration.o xcp_fifo.o xcp_transport.o xcp_mem_default.o xcp_drv_rtiostream.o xcp_utils.o xcp_frame_serial.o xcp_ext_param_default_serial.o overrideHALDelay.o platform_timer.o SysTickScheduler.o m3m4m4f_multitasking.o rtiostream_serial.o stm_usart.o stm_lpuart.o sys_arch.o main.o stm32g4xx_it.o stm32g4xx_hal_msp.o stm32g4xx_hal_timebase_tim.o stm32g4xx_ll_utils.o stm32g4xx_ll_exti.o stm32g4xx_ll_gpio.o stm32g4xx_ll_dma.o stm32g4xx_ll_lpuart.o stm32g4xx_ll_rcc.o stm32g4xx_ll_pwr.o stm32g4xx_hal.o stm32g4xx_hal_rcc.o stm32g4xx_hal_rcc_ex.o stm32g4xx_hal_flash.o stm32g4xx_hal_flash_ex.o stm32g4xx_hal_flash_ramfunc.o stm32g4xx_hal_gpio.o stm32g4xx_hal_exti.o stm32g4xx_hal_dma.o stm32g4xx_hal_dma_ex.o stm32g4xx_hal_pwr.o stm32g4xx_hal_pwr_ex.o stm32g4xx_hal_cortex.o stm32g4xx_hal_tim.o stm32g4xx_hal_tim_ex.o stm32g4xx_ll_tim.o system_stm32g4xx.o syscalls.o sysmem.o startup_stm32g474retx.o
 
 MAIN_OBJ = ert_main.o
 
@@ -275,7 +275,7 @@ CFLAGS += $(CFLAGS_SKIPFORSIL) $(CFLAGS_BASIC)
 #-----------
 
 LDFLAGS_ = --specs=nano.specs
-LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\Read_QEI_Polling\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 LDFLAGS += $(LDFLAGS_) $(LDFLAGS_SKIPFORSIL)
 
@@ -284,7 +284,7 @@ LDFLAGS += $(LDFLAGS_) $(LDFLAGS_SKIPFORSIL)
 #--------------------------
 
 SHAREDLIB_LDFLAGS_ = --specs=nano.specs
-SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\Read_QEI_Polling\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 SHAREDLIB_LDFLAGS += $(SHAREDLIB_LDFLAGS_) $(SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -302,7 +302,7 @@ CPPFLAGS += $(CPPFLAGS_SKIPFORSIL) $(CPPFLAGS_BASIC)
 #---------------
 
 CPP_LDFLAGS_ = --specs=nano.specs
-CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+CPP_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\Read_QEI_Polling\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 CPP_LDFLAGS += $(CPP_LDFLAGS_) $(CPP_LDFLAGS_SKIPFORSIL)
 
@@ -311,7 +311,7 @@ CPP_LDFLAGS += $(CPP_LDFLAGS_) $(CPP_LDFLAGS_SKIPFORSIL)
 #------------------------------
 
 CPP_SHAREDLIB_LDFLAGS_ = --specs=nano.specs
-CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\QEI_Polling_Read\STM32CubeIDE\STM32G474RETX_FLASH.ld"
+CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL = -mcpu=cortex-m4 -mthumb -mlittle-endian -mthumb-interwork -mfpu=fpv4-sp-d16 -mfloat-abi=hard --entry Reset_Handler --specs=nosys.specs  -T"C:\Users\spwkp\OneDrive\Desktop\RMX_Lab_1\Encoder\Read_QEI_Polling\STM32CubeIDE\STM32G474RETX_FLASH.ld"
 
 CPP_SHAREDLIB_LDFLAGS += $(CPP_SHAREDLIB_LDFLAGS_) $(CPP_SHAREDLIB_LDFLAGS_SKIPFORSIL)
 
@@ -738,10 +738,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-stm_timer_ll.o : C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_timer_ll.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
 xcp_ext_mode.o : $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
@@ -838,127 +834,127 @@ sys_arch.o : $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/src/sys_arc
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-main.o : $(START_DIR)/QEI_Polling_Read/Core/Src/main.c
+main.o : $(START_DIR)/Read_QEI_Polling/Core/Src/main.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_it.o : $(START_DIR)/QEI_Polling_Read/Core/Src/stm32g4xx_it.c
+stm32g4xx_it.o : $(START_DIR)/Read_QEI_Polling/Core/Src/stm32g4xx_it.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_msp.o : $(START_DIR)/QEI_Polling_Read/Core/Src/stm32g4xx_hal_msp.c
+stm32g4xx_hal_msp.o : $(START_DIR)/Read_QEI_Polling/Core/Src/stm32g4xx_hal_msp.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_timebase_tim.o : $(START_DIR)/QEI_Polling_Read/Core/Src/stm32g4xx_hal_timebase_tim.c
+stm32g4xx_hal_timebase_tim.o : $(START_DIR)/Read_QEI_Polling/Core/Src/stm32g4xx_hal_timebase_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_utils.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c
+stm32g4xx_ll_utils.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_exti.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c
+stm32g4xx_ll_exti.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_gpio.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c
+stm32g4xx_ll_gpio.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_dma.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c
+stm32g4xx_ll_dma.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_lpuart.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c
+stm32g4xx_ll_lpuart.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_rcc.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c
+stm32g4xx_ll_rcc.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_pwr.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c
+stm32g4xx_ll_pwr.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c
+stm32g4xx_hal.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_rcc.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c
+stm32g4xx_hal_rcc.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_rcc_ex.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c
+stm32g4xx_hal_rcc_ex.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_flash.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c
+stm32g4xx_hal_flash.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_flash_ex.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c
+stm32g4xx_hal_flash_ex.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_flash_ramfunc.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c
+stm32g4xx_hal_flash_ramfunc.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_gpio.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c
+stm32g4xx_hal_gpio.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_exti.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c
+stm32g4xx_hal_exti.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_dma.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c
+stm32g4xx_hal_dma.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_dma_ex.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c
+stm32g4xx_hal_dma_ex.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_pwr.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
+stm32g4xx_hal_pwr.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_pwr_ex.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
+stm32g4xx_hal_pwr_ex.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_cortex.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
+stm32g4xx_hal_cortex.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_tim.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
+stm32g4xx_hal_tim.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_tim_ex.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
+stm32g4xx_hal_tim_ex.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_tim.o : $(START_DIR)/QEI_Polling_Read/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c
+stm32g4xx_ll_tim.o : $(START_DIR)/Read_QEI_Polling/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-system_stm32g4xx.o : $(START_DIR)/QEI_Polling_Read/Core/Src/system_stm32g4xx.c
+system_stm32g4xx.o : $(START_DIR)/Read_QEI_Polling/Core/Src/system_stm32g4xx.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-syscalls.o : $(START_DIR)/QEI_Polling_Read/STM32CubeIDE/Application/User/Core/syscalls.c
+syscalls.o : $(START_DIR)/Read_QEI_Polling/STM32CubeIDE/Application/User/Core/syscalls.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-sysmem.o : $(START_DIR)/QEI_Polling_Read/STM32CubeIDE/Application/User/Core/sysmem.c
+sysmem.o : $(START_DIR)/Read_QEI_Polling/STM32CubeIDE/Application/User/Core/sysmem.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-startup_stm32g474retx.o : $(START_DIR)/QEI_Polling_Read/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s
+startup_stm32g474retx.o : $(START_DIR)/Read_QEI_Polling/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s
 	$(AS) $(ASFLAGS) -o "$@" "$<"
 
 
