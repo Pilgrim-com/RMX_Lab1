@@ -7,7 +7,7 @@
 %endfunction
 %function ChartDataMap(block, system) void
   %createrecord ChartDataElements {\
-    NumChartData   6 \
+    NumChartData   12 \
     ChartDataDefaults {\
       RecordType   "ChartData"\
       Dimensions   []\
@@ -32,28 +32,70 @@
       Description  "EmlPersistent"\
       SFName       ""\
       Path         ""\
-      SrcLocation  "QEI_Pulling:129:284-289"\
+      SrcLocation  "QEI_Pulling:129:391-396"\
     }\
     ChartData {\
       Name         "lastA_not_empty"\
       Description  "EmlPersistentSentinel"\
       SFName       ""\
       Path         ""\
-      SrcLocation  "QEI_Pulling:129:284-289"\
+      SrcLocation  "QEI_Pulling:129:391-396"\
     }\
     ChartData {\
       Name         "count"\
       Description  "EmlPersistent"\
       SFName       ""\
       Path         ""\
-      SrcLocation  "QEI_Pulling:129:290-295"\
+      SrcLocation  "QEI_Pulling:129:397-402"\
     }\
     ChartData {\
       Name         "count_not_empty"\
       Description  "EmlPersistentSentinel"\
       SFName       ""\
       Path         ""\
-      SrcLocation  "QEI_Pulling:129:290-295"\
+      SrcLocation  "QEI_Pulling:129:397-402"\
+    }\
+    ChartData {\
+      Name         "lastCount"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QEI_Pulling:129:403-412"\
+    }\
+    ChartData {\
+      Name         "lastCount_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QEI_Pulling:129:403-412"\
+    }\
+    ChartData {\
+      Name         "lastTime"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QEI_Pulling:129:413-421"\
+    }\
+    ChartData {\
+      Name         "lastTime_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "QEI_Pulling:129:413-421"\
+    }\
+    ChartData {\
+      Name         "freq"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "C:\Program Files\MATLAB\R2024b\toolbox\shared\coder\coder\lib\+coder\+internal\+time\CoderTimeAPI.m:5178-5182"\
+    }\
+    ChartData {\
+      Name         "freq_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "C:\Program Files\MATLAB\R2024b\toolbox\shared\coder\coder\lib\+coder\+internal\+time\CoderTimeAPI.m:5178-5182"\
     }\
   }
   %return ChartDataElements

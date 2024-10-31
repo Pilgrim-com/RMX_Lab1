@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI_Pulling'.
  *
- * Model version                  : 1.4
+ * Model version                  : 1.7
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Thu Oct 31 02:57:27 2024
+ * C/C++ source code generated on : Thu Oct 31 07:14:00 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -25,6 +25,7 @@
 #include "rtw_extmode.h"
 #include "sysran_types.h"
 #include "math.h"
+#include "coder_posix_time.h"
 #include "main.h"
 #endif                                 /* QEI_Pulling_COMMON_INCLUDES_ */
 
@@ -74,17 +75,25 @@
 
 /* Block signals (default storage) */
 typedef struct {
+  real_T Polling_X1_Position;          /* '<Root>/Gain' */
   real_T position;                     /* '<Root>/MATLAB Function' */
+  real_T velocity;                     /* '<Root>/MATLAB Function' */
   boolean_T DigitalPortRead;           /* '<S7>/Digital Port Read' */
   boolean_T DigitalPortRead_e;         /* '<S5>/Digital Port Read' */
 } B_QEI_Pulling_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
+  sdAmwXbnJnEmimT0NaJRtAD_QEI_P_T lastTime;/* '<Root>/MATLAB Function' */
   real_T lastA;                        /* '<Root>/MATLAB Function' */
   real_T count;                        /* '<Root>/MATLAB Function' */
+  real_T lastCount;                    /* '<Root>/MATLAB Function' */
+  real_T freq;                         /* '<Root>/MATLAB Function' */
   boolean_T lastA_not_empty;           /* '<Root>/MATLAB Function' */
   boolean_T count_not_empty;           /* '<Root>/MATLAB Function' */
+  boolean_T lastCount_not_empty;       /* '<Root>/MATLAB Function' */
+  boolean_T lastTime_not_empty;        /* '<Root>/MATLAB Function' */
+  boolean_T freq_not_empty;            /* '<Root>/MATLAB Function' */
 } DW_QEI_Pulling_T;
 
 /* Real-time Model Data Structure */

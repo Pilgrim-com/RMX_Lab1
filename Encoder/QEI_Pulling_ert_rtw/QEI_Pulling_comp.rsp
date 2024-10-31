@@ -1,4 +1,5 @@
 -IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder
+-I"C:/Program Files/MATLAB/R2024b/toolbox/eml/externalDependency/timefun"
 -IC:/Users/spwkp/OneDrive/Desktop/RMX_Lab_1/Encoder/QEI_Pulling_ert_rtw
 -I"C:/Program Files/MATLAB/R2024b/extern/include"
 -I"C:/Program Files/MATLAB/R2024b/simulink/include"
